@@ -10,10 +10,14 @@ function update (){
     fetch(`https://v6.exchangerate-api.com/v6/27c85fd309fb64a13ec66ac4/latest/${sel1.value}`).then ((res) => res.json()). 
     then((data) => {
         const rate = data.conversion_rates[sel2.value];
-        console.log(rate);
 
-        para.textContent = `1 ${sel1.value} = ${rate} ${sel2.value}`;  
-        in2.value = (rate * in1.value).toFixed(2); 
+        
+
+
+        para.textContent = `1 ${sel1.value} = ${rate.toLocaleString("de-DE", {minimumFractionDigits: 2, maximumFractionDigits: 2 })} ${sel2.value}`;  
+        
+        const convertedValue = rate * in1.value;
+        in2.value = convertedValue.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     })
 }
 
