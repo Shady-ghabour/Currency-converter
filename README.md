@@ -1,5 +1,5 @@
 # Project Description
-This project is a simple currency converter web application that allows users to convert amounts between four different currencies: Syrian Pounds (SYP), Danish Crowns (DKK), US Dollars (USD), and Euros (EUR). The application fetches real-time exchange rates and calculates the converted amount based on the user's input.
+This project is a simple currency converter web application that allows users to convert amounts between four different currencies: Syrian Pounds (SYP), Danish Crowns (DKK), US Dollars (USD), Euros (EUR), and Turkish lira. The application fetches real-time exchange rates and calculates the converted amount based on the user's input.
 
 The project is built using HTML, CSS, and JavaScript.
 
