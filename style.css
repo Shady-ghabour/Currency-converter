@@ -1,3 +1,4 @@
+
 body{
     font-family: "Anton", sans-serif;
     font-style: normal;
@@ -23,6 +24,13 @@ body{
     text-align: center;
     border: 2px solid blue;
 }
+
+@media (max-width: 768px) {
+    .container{
+        padding: 0;
+    }  
+}
+
 
 .s-container{
     padding: 20px;
